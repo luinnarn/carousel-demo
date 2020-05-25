@@ -25,7 +25,7 @@ const Layout = props => {
     }, [radius, theta]
   );
 
-  useEffect(() => props.selectedPage !== undefined && rotateTo(props.selectedPage), [props.selectedPage]);
+  useEffect(() => rotateTo(props.selectedPage));
 
   const rotateTo = n => {
     const carousel = document.querySelector('.carousel');
